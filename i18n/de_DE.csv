@@ -1,0 +1,4 @@
+"Customer Order status","Kunden Bestell Status"
+"Period Till Cancellation","Zeitfenster bis zur Stornierung"
+"User has not confirmed E-Mail Address in the %1 Days Period. This Order can therefore not be saved", "Benutzer hat innerhalb des Zeitfensters von %1 Tagen nicht seine E-Mail Adresse bestätigt. Diese Bestellung wird daher nicht aufgenommen"
+"Cancel Orders onHold for Customers with a non confirmed E-Mail Address","Storniere zurückgehaltene Bestellungen von Kunden deren E-Mail Adresse nicht bestätigt wurde"

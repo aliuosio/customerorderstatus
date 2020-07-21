@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="aliuosio" sortOrder="0">
+            <label>AliuOsio</label>
+        </tab>
+        <section id="aliuosio_customerorderstatus" translate="label" type="text" sortOrder="1" showInDefault="1"
+                 showInWebsite="1" showInStore="1">
+            <tab>aliuosio</tab>
+            <class>separator-top</class>
+            <label>Customer Order status</label>
+            <resource>AliuOsio_CustomerOrderstatus::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="1" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>General</label>
+                <comment><![CDATA[
+
+**Changes the status of an order depending on the E-Mail Confirmation status**
+
+Upon an new order the status is set to onHold till the E-Mail has been verified.
+If the Confirmation period which can be set in the backend is expired te customer can not orde rwith that Adress anymore.
+This also includes orders made over the Backend
+]]>
+                </comment>
+                <field id="enabled" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Enabled</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="debug" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1"
+                       showInStore="1">
+                    <label>Debug</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <field id="order_cancellation_period_days" translate="label" type="text" sortOrder="10" showInDefault="1"
+                       showInWebsite="1" showInStore="1">
+                    <label>Period Till Cancellation</label>
+                    <frontend_class>required-entry validate-digits</frontend_class>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
