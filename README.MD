@@ -10,6 +10,6 @@ This also includes orders made over the Backend
 
 
 ### Install
-    composer require aliuosio/maxquoteitems;
+    composer require aliuosio/customerorderstatus;
     bin/magento se:up;
     bin/magento c:c;
